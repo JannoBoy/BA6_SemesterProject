@@ -32,7 +32,8 @@ public class TouchControls : MonoBehaviour
 
 	bool _shouldDrag;
 	bool _wasRotating;
-	bool _followTarget;
+	[SerializeField]
+	bool _followTarget=true;
 	//void Update()
 	//{
 	//	if (Input.touchCount == 0)
