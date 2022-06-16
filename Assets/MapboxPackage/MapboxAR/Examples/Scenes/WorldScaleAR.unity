@@ -121,6 +121,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &141109436 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1883652969429932, guid: 67597a1e442b246869f416a1b5272850,
+    type: 3}
+  m_PrefabInstance: {fileID: 1680096571}
+  m_PrefabAsset: {fileID: 0}
 --- !u!28 &183575790
 Texture2D:
   m_ObjectHideFlags: 0
@@ -163,6 +169,35 @@ Texture2D:
     offset: 0
     size: 0
     path: 
+--- !u!1 &720697861 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1242951321969780, guid: 67597a1e442b246869f416a1b5272850,
+    type: 3}
+  m_PrefabInstance: {fileID: 1680096571}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &720697862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 720697861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b179a0e05c8746547801cf58027d9918, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ARPlaceableObjects:
+  - {fileID: 0}
+  - {fileID: 0}
+  previewObject: {fileID: 1132867740}
+  findingSquare: {fileID: 141109436}
+  foundSquare: {fileID: 1448771341}
+  maxRayDistance: 30
+  collisionLayerMask:
+    serializedVersion: 2
+    m_Bits: 1536
+  findingSquareDist: 0.5
 --- !u!21 &780249051
 Material:
   serializedVersion: 6
@@ -757,6 +792,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 35e76f6e52f5c4252a0b703cc2019a37, type: 3}
+--- !u!1 &1132867740 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1778445485438963154, guid: 1286de1693119fc4c9e8416662094cda,
+    type: 3}
+  m_PrefabInstance: {fileID: 1856186085}
+  m_PrefabAsset: {fileID: 0}
 --- !u!21 &1360646867
 Material:
   serializedVersion: 6
@@ -832,6 +873,12 @@ Material:
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+--- !u!1 &1448771341 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1505998952856794, guid: 67597a1e442b246869f416a1b5272850,
+    type: 3}
+  m_PrefabInstance: {fileID: 1680096571}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1673180111
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1048,5 +1095,99 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114158314508307150, guid: 67597a1e442b246869f416a1b5272850,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 67597a1e442b246869f416a1b5272850, type: 3}
+--- !u!1001 &1856186085
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1778445485438963154, guid: 1286de1693119fc4c9e8416662094cda,
+        type: 3}
+      propertyPath: m_Name
+      value: ARPlacementPlaceholder
+      objectReference: {fileID: 0}
+    - target: {fileID: 1778445485438963154, guid: 1286de1693119fc4c9e8416662094cda,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 3811883676355689273, guid: 1286de1693119fc4c9e8416662094cda,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3811883676355689273, guid: 1286de1693119fc4c9e8416662094cda,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3811883676355689273, guid: 1286de1693119fc4c9e8416662094cda,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3811883676355689273, guid: 1286de1693119fc4c9e8416662094cda,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3811883676355689273, guid: 1286de1693119fc4c9e8416662094cda,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 379.21335
+      objectReference: {fileID: 0}
+    - target: {fileID: 3811883676355689273, guid: 1286de1693119fc4c9e8416662094cda,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 293.28824
+      objectReference: {fileID: 0}
+    - target: {fileID: 3811883676355689273, guid: 1286de1693119fc4c9e8416662094cda,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -22.030153
+      objectReference: {fileID: 0}
+    - target: {fileID: 3811883676355689273, guid: 1286de1693119fc4c9e8416662094cda,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3811883676355689273, guid: 1286de1693119fc4c9e8416662094cda,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3811883676355689273, guid: 1286de1693119fc4c9e8416662094cda,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3811883676355689273, guid: 1286de1693119fc4c9e8416662094cda,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3811883676355689273, guid: 1286de1693119fc4c9e8416662094cda,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3811883676355689273, guid: 1286de1693119fc4c9e8416662094cda,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3811883676355689273, guid: 1286de1693119fc4c9e8416662094cda,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1286de1693119fc4c9e8416662094cda, type: 3}

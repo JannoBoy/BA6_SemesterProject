@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.iOS;
 
-public class ARObjectPlaceScript : MonoBehaviour 
+namespace ARPlacement
 {
+    public class ARObjectPlaceScript : MonoBehaviour
+    {
 
 
 
@@ -14,6 +16,12 @@ public class ARObjectPlaceScript : MonoBehaviour
             Finding,
             Found
         }
+
+        [SerializeField]
+        private GameObject[] ARPlaceableObjects = new GameObject[2];
+
+        [SerializeField]
+        private GameObject previewObject;
 
         public GameObject findingSquare;
         public GameObject foundSquare;
@@ -68,9 +76,18 @@ public class ARObjectPlaceScript : MonoBehaviour
                 //and the rotation from the transform of the plane collider
                 SquareState = FocusState.Found;
                 foundSquare.transform.rotation = hit.transform.rotation;
+                if (SquareState == FocusState.Found)
+                {
+                    Debug.Log("Found Focus");
+                    previewObject.SetActive(true);
+                    previewObject.transform.position = foundSquare.transform.position;
+
+                    previewObject.transform.rotation = foundSquare.transform.rotation;
+                }
                 return;
             }
 
+            
 
             //if you got here, we have not found a plane, so if camera is facing below horizon, display the focus "finding" square
             if (trackingInitialized)
@@ -103,9 +120,32 @@ public class ARObjectPlaceScript : MonoBehaviour
                     findingSquare.SetActive(false);
                 }
 
-            }
+                if(SquareState == FocusState.Finding)
+                {
+                    previewObject.SetActive(false); ;
+                }
 
+            }
+            
+
+        }
+
+        private void ObjectPlacement()
+        {
+            if (SquareState == FocusState.Found)
+            {
+                Debug.Log("Found Focus");
+                previewObject.SetActive(true);
+                previewObject.transform.position = findingSquare.transform.position;
+
+                previewObject.transform.rotation = findingSquare.transform.rotation;
+            }
+            else if (SquareState == FocusState.Finding)
+            {
+                previewObject.SetActive(false);
+            }
         }
 
 
     }
+}
