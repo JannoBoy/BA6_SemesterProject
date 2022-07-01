@@ -121,6 +121,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &46579022 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7929819659428332960, guid: 615ea04002c3fe04588d846853ec6f08,
+    type: 3}
+  m_PrefabInstance: {fileID: 7929819659474581742}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &73800263 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9099475525441488787, guid: 38de0975b42ce6a4fa010f964a4e82f6,
@@ -559,3 +565,77 @@ Camera:
     type: 3}
   m_PrefabInstance: {fileID: 1694975545}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7929819659474581742
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7929819659518137716, guid: 615ea04002c3fe04588d846853ec6f08,
+        type: 3}
+      propertyPath: myUI
+      value: 
+      objectReference: {fileID: 46579022}
+    - target: {fileID: 7929819659518137717, guid: 615ea04002c3fe04588d846853ec6f08,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7929819659518137717, guid: 615ea04002c3fe04588d846853ec6f08,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7929819659518137717, guid: 615ea04002c3fe04588d846853ec6f08,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7929819659518137717, guid: 615ea04002c3fe04588d846853ec6f08,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7929819659518137717, guid: 615ea04002c3fe04588d846853ec6f08,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7929819659518137717, guid: 615ea04002c3fe04588d846853ec6f08,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7929819659518137717, guid: 615ea04002c3fe04588d846853ec6f08,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7929819659518137717, guid: 615ea04002c3fe04588d846853ec6f08,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7929819659518137717, guid: 615ea04002c3fe04588d846853ec6f08,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7929819659518137717, guid: 615ea04002c3fe04588d846853ec6f08,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7929819659518137717, guid: 615ea04002c3fe04588d846853ec6f08,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7929819659518137719, guid: 615ea04002c3fe04588d846853ec6f08,
+        type: 3}
+      propertyPath: m_Name
+      value: FirebaseAuthentication
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 615ea04002c3fe04588d846853ec6f08, type: 3}
