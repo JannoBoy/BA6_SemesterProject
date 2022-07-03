@@ -15,7 +15,7 @@ public class LandmarkData : ScriptableObject
     public struct DialogueEntry
     {
         public string text;
-        public Image dialogueImage;
+        public Sprite dialogueImage;
     }
 
 }

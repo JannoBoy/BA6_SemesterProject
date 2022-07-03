@@ -30,6 +30,11 @@ public class Gamemanager : MonoBehaviour
 
     public Landmark[] Landmarks;
 
+    string currentLandmarkName;
+    Landmark currentLandmark;
+
+    public int _slideshowIndex = 0;
+
     public void StartGame()
     {
         camera_Map.enabled = true;
@@ -40,40 +45,120 @@ public class Gamemanager : MonoBehaviour
 
     public void Btn_OpenLandmarkMenu(string name_Landmark)
     {
-        for (int i = 0; i < Landmarks.Length; i++)
+        Landmark myLandmark = GetLandmark(name_Landmark);
+        if (myLandmark.data == null)
         {
-            if (Landmarks[i].name.Equals(name_Landmark))
-            {
-                //fill landmark title and image
-                FillLandmarkInfo(Landmarks[i].data);
-                break;
-            }
+            Debug.Log("Landmark " + name_Landmark + " not found");
+            return;
+
         }
+        else
+        {
+            //set current landmark shared variables
+            currentLandmark = myLandmark;
+            currentLandmarkName = name_Landmark;
+            //fill landmark title and image
+            UpdateLandmarkMenuInfo(currentLandmark.data);
+            //initialize index for slideshow
+            _slideshowIndex = 1;
+            //display landmark menu
+            Menu_Landmark_Main.SetActive(true);
+
+        }
+
+
     }
     //exit landmark and go back to map view
     public void Btn_CloseLandmarkMenu()
     {
-
+        currentLandmarkName = "";
+        currentLandmark = new Landmark { name = "", data = null };
+        _slideshowIndex = 0;
+        Menu_Landmark_Main.SetActive(false);
+        Menu_Landmark_Slideshow.SetActive(false);
+        Menu_Landmark_Interaction.SetActive(false);
     }
+
+    public void Btn_OpenLandmarkSlideshowMenu()
+    {
+        UpdateLandmarkSlideshowInfo(currentLandmark.data);
+        Menu_Landmark_Slideshow.SetActive(true);
+        Menu_Landmark_Main.SetActive(false);
+    }
+
     //open interaction menu
     public void Btn_OpenLandmarkInteractionMenu()
     {
 
     }
     //go to next dialogue/image entry for the landmark
-    public void Btn_LandmarkInteraction_Next()
+    public void Btn_LandmarkSlideshow_Next()
     {
-
+        _slideshowIndex++;
+        UpdateLandmarkSlideshowInfo(currentLandmark.data);
     }
     //go to previous dialogue/image entry for the landmark
-    public void Btn_LandmarkInteraction_Previous()
+    public void Btn_LandmarkSlideshow_Previous()
     {
+        _slideshowIndex--;
+        UpdateLandmarkSlideshowInfo(currentLandmark.data);
+    }
+
+    void UpdateLandmarkMenuInfo(LandmarkData _data)
+    {
+        Debug.Log("filling landmark info menu for: " + _data.landmarkName);
+        text_LandmarkTitle.SetText(_data.landmarkName);
+        image_LandmarkImage.sprite = _data.text_dialogues[0].dialogueImage;
 
     }
 
-    void FillLandmarkInfo(LandmarkData _data)
+    void UpdateLandmarkSlideshowInfo(LandmarkData _data)
     {
-        Debug.Log("The location name from entry is: " + _data.landmarkName);
+        image_Slideshow.sprite = _data.text_dialogues[_slideshowIndex].dialogueImage;
+        text_Slideshow.SetText(_data.text_dialogues[_slideshowIndex].text);
+        text_PageCounter.SetText((_slideshowIndex).ToString() + "/" + (currentLandmark.data.text_dialogues.Count -1).ToString());
+
+        //buttons visibility
+        if (_slideshowIndex < currentLandmark.data.text_dialogues.Count - 1)
+        {
+            btn_Previous.SetActive(false);
+            btn_Next.SetActive(true);
+        }
+        else if (_slideshowIndex == currentLandmark.data.text_dialogues.Count - 1)
+        {
+            if (_slideshowIndex>1)
+            {
+                btn_Previous.SetActive(true);
+            }
+            else
+            {
+                btn_Previous.SetActive(false);
+            }
+            
+            btn_Next.SetActive(false);
+        }
+        else
+        {
+            btn_Previous.SetActive(true);
+            btn_Next.SetActive(true);
+        }
+
+    }
+
+    Landmark GetLandmark(string name_Landmark)
+    {
+        Landmark result = new Landmark { name = "", data = null };
+        for (int i = 0; i < Landmarks.Length; i++)
+        {
+            if (Landmarks[i].name.Equals(name_Landmark))
+            {
+                currentLandmark = Landmarks[i];
+
+                result = Landmarks[i];
+                break;
+            }
+        }
+        return result;
     }
 
     [System.Serializable]
@@ -85,9 +170,18 @@ public class Gamemanager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F))
+        //Testing UI flow
+        if (Input.GetKeyDown(KeyCode.D))
         {
             Btn_OpenLandmarkMenu("Dom");
+        }
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            Btn_OpenLandmarkMenu("WDR");
+        }
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            Btn_CloseLandmarkMenu();
         }
     }
 }

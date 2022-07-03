@@ -15,4 +15,6 @@ MonoBehaviour:
   landmarkName: Dom
   text_dialogues:
   - text: testing text Dom
-    dialogueImage: {fileID: 0}
+    dialogueImage: {fileID: 21300000, guid: 94b9cb7f9a573e34ea5dc8fcee42a2da, type: 3}
+  - text: testing text Dom 2
+    dialogueImage: {fileID: 21300000, guid: 1f5aa8b44572b0c488729e515dddad4f, type: 3}
