@@ -6,15 +6,27 @@ using UnityEngine.UI;
 
 public class Gamemanager : MonoBehaviour
 {
-
+    [Header("Settings")]
     public GameObject Menu_MainMenu;
-
     public Camera camera_Map, camera_Depth;
 
-    public GameObject Menu_Landmark;
+    [Header("Landmark Main")]
+    public GameObject Menu_Landmark_Main;
     public TMP_Text text_LandmarkTitle;
     public Image image_LandmarkImage;
 
+    [Header("Landmark Slideshow")]
+    public GameObject Menu_Landmark_Slideshow;
+    public Image image_Slideshow_Frogo;
+    public Image image_Slideshow;
+    public TMP_Text text_Slideshow;
+    public GameObject btn_Next;
+    public GameObject btn_Previous;
+    public TMP_Text text_PageCounter;
+
+    [Header("Landmark Interaction")]
+    public GameObject Menu_Landmark_Interaction;
+    public Image image_Frogo;
 
     public Landmark[] Landmarks;
 
@@ -37,7 +49,6 @@ public class Gamemanager : MonoBehaviour
                 break;
             }
         }
-        
     }
     //exit landmark and go back to map view
     public void Btn_CloseLandmarkMenu()

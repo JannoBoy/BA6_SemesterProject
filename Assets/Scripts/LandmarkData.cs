@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-[CreateAssetMenu(fileName = "Landmark_Data", menuName = "LandmarkData/Data", order = 1)]
+[CreateAssetMenu(fileName = "Landmark_Data", menuName = "Landmark/Landmark_Data", order = 1)]
 public class LandmarkData : ScriptableObject
 {
     public string landmarkName;
