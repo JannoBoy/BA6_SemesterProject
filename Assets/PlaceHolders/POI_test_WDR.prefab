@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2941978722654100363}
   - component: {fileID: 510059552032776574}
   m_Layer: 0
-  m_Name: POI_test
+  m_Name: POI_test_WDR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -108,7 +108,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dependencyStatus: 0
-  myName: TestPOI
+  myName: WDRFunkhaus
   messageNumber: 0
   playerEnteredMaterial: {fileID: 2100000, guid: cf6e84d1f2f9a7d49a16273bdbd5491d,
     type: 2}
