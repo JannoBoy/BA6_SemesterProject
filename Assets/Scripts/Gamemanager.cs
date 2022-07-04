@@ -3,12 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using NatSuite.Examples.Components;
 
 public class Gamemanager : MonoBehaviour
 {
+    public static Gamemanager instance;
     [Header("Settings")]
     public GameObject Menu_MainMenu;
     public Camera camera_Map, camera_Depth;
+    public GameObject SelfiePreview;
+    public GameObject Canvas_Selfie;
+    public GameObject camera_Selfie;
+    public GameObject Canvas_Landmarks;
+    public GameObject Canvas_Debug;
 
     [Header("Landmark Main")]
     public GameObject Menu_Landmark_Main;
@@ -22,6 +29,7 @@ public class Gamemanager : MonoBehaviour
     public TMP_Text text_Slideshow;
     public GameObject btn_Next;
     public GameObject btn_Previous;
+    public GameObject btn_InteractionMenu;
     public TMP_Text text_PageCounter;
 
     [Header("Landmark Interaction")]
@@ -30,10 +38,25 @@ public class Gamemanager : MonoBehaviour
 
     public Landmark[] Landmarks;
 
+    [Header("Camera settings")]
+
     string currentLandmarkName;
     Landmark currentLandmark;
 
     public int _slideshowIndex = 0;
+
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            DontDestroyOnLoad(gameObject);
+            instance = this;
+        }
+        else if (instance != this)
+        {
+            Destroy(gameObject);
+        }
+    }
 
     public void StartGame()
     {
@@ -41,8 +64,38 @@ public class Gamemanager : MonoBehaviour
         camera_Depth.enabled = true;
 
         Menu_MainMenu.SetActive(false);
+
+        StartCoroutine(InitWebcam());
     }
 
+    IEnumerator InitWebcam()
+    {
+        yield return StartCoroutine(EnableSelfiePreview());
+        yield return StartCoroutine(CameraPreview.instance.InitWebcam());
+        yield return StartCoroutine(CameraPreview.instance.StartWebcam(CameraPreview.instance._ChosenDeviceName));
+
+    }
+
+    IEnumerator EnableSelfiePreview()
+    {
+        Canvas_Selfie.SetActive(true);
+        //SelfiePreview.SetActive(true);
+        Canvas_Landmarks.SetActive(false);
+        Canvas_Debug.SetActive(false);
+        camera_Map.enabled = false;
+        camera_Depth.enabled = false;
+        yield return null;
+    }
+
+    public void DisableSelfiePreview()
+    {
+        camera_Map.enabled = true;
+        camera_Depth.enabled = true;
+        Canvas_Landmarks.SetActive(true);
+        Canvas_Debug.SetActive(true);
+        Canvas_Selfie.SetActive(false);
+        //SelfiePreview.SetActive(false);
+    }
     public void Btn_OpenLandmarkMenu(string name_Landmark)
     {
         Landmark myLandmark = GetLandmark(name_Landmark);
@@ -89,7 +142,8 @@ public class Gamemanager : MonoBehaviour
     //open interaction menu
     public void Btn_OpenLandmarkInteractionMenu()
     {
-
+        Menu_Landmark_Interaction.SetActive(true);
+        Menu_Landmark_Slideshow.SetActive(false);
     }
     //go to next dialogue/image entry for the landmark
     public void Btn_LandmarkSlideshow_Next()
@@ -104,6 +158,16 @@ public class Gamemanager : MonoBehaviour
         UpdateLandmarkSlideshowInfo(currentLandmark.data);
     }
 
+    public void Btn_NextCamera()
+    {
+        CameraPreview.instance.NextWebcam();
+    }
+
+    public void Btn_CloseCameraPreview()
+    {
+
+    }
+
     void UpdateLandmarkMenuInfo(LandmarkData _data)
     {
         Debug.Log("filling landmark info menu for: " + _data.landmarkName);
@@ -116,7 +180,7 @@ public class Gamemanager : MonoBehaviour
     {
         image_Slideshow.sprite = _data.text_dialogues[_slideshowIndex].dialogueImage;
         text_Slideshow.SetText(_data.text_dialogues[_slideshowIndex].text);
-        text_PageCounter.SetText((_slideshowIndex).ToString() + "/" + (currentLandmark.data.text_dialogues.Count -1).ToString());
+        text_PageCounter.SetText((_slideshowIndex).ToString() + "/" + (currentLandmark.data.text_dialogues.Count - 1).ToString());
 
         //buttons visibility
         if (_slideshowIndex < currentLandmark.data.text_dialogues.Count - 1)
@@ -126,7 +190,7 @@ public class Gamemanager : MonoBehaviour
         }
         else if (_slideshowIndex == currentLandmark.data.text_dialogues.Count - 1)
         {
-            if (_slideshowIndex>1)
+            if (_slideshowIndex > 1)
             {
                 btn_Previous.SetActive(true);
             }
@@ -134,8 +198,9 @@ public class Gamemanager : MonoBehaviour
             {
                 btn_Previous.SetActive(false);
             }
-            
+
             btn_Next.SetActive(false);
+            btn_InteractionMenu.SetActive(true);
         }
         else
         {
@@ -182,6 +247,10 @@ public class Gamemanager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.C))
         {
             Btn_CloseLandmarkMenu();
+        }
+        if (Input.GetKeyDown(KeyCode.N))
+        {
+            CameraPreview.instance.NextWebcam();
         }
     }
 }
