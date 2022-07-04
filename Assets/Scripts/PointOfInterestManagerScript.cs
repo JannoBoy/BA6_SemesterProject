@@ -122,7 +122,7 @@ public class PointOfInterestManagerScript : MonoBehaviour
 
     void Start()
     {
-
+        LoadMessages();
     }
 
 

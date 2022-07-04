@@ -7,8 +7,9 @@ namespace Mapbox.Unity.MeshGeneration.Modifiers
 	using System.Collections.Generic;
 	using Mapbox.Unity.Map;
 	using System;
+    using System.Collections;
 
-	[CreateAssetMenu(menuName = "Mapbox/Modifiers/Prefab Modifier")]
+    [CreateAssetMenu(menuName = "Mapbox/Modifiers/Prefab Modifier")]
 	public class PrefabModifier : GameObjectModifier
 	{
 		private Dictionary<GameObject, GameObject> _objects;
@@ -16,7 +17,8 @@ namespace Mapbox.Unity.MeshGeneration.Modifiers
 		private SpawnPrefabOptions _options;
 		private List<GameObject> _prefabList = new List<GameObject>();
 
-		public override void Initialize()
+
+        public override void Initialize()
 		{
 			if (_objects == null)
 			{
