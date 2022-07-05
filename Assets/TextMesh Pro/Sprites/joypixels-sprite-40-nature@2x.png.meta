@@ -1,0 +1,1511 @@
+fileFormatVersion: 2
+guid: 91318d6f2279f6d4aba6077592e28dd3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4403220076874611488
+    second: joypixels-sprite-40-nature@2x_0
+  - first:
+      213: -7316696908329795054
+    second: joypixels-sprite-40-nature@2x_1
+  - first:
+      213: 8998706181464945758
+    second: joypixels-sprite-40-nature@2x_2
+  - first:
+      213: 1475823977479986911
+    second: joypixels-sprite-40-nature@2x_3
+  - first:
+      213: -7443118328713822023
+    second: joypixels-sprite-40-nature@2x_4
+  - first:
+      213: -5037925034587200959
+    second: joypixels-sprite-40-nature@2x_5
+  - first:
+      213: 2893559693713823122
+    second: joypixels-sprite-40-nature@2x_6
+  - first:
+      213: -3548410598224438632
+    second: joypixels-sprite-40-nature@2x_7
+  - first:
+      213: -6818949491667477992
+    second: joypixels-sprite-40-nature@2x_8
+  - first:
+      213: 8213121270729985412
+    second: joypixels-sprite-40-nature@2x_9
+  - first:
+      213: -1814949317167207518
+    second: joypixels-sprite-40-nature@2x_49
+  - first:
+      213: -8445863341457467663
+    second: joypixels-sprite-40-nature@2x_50
+  - first:
+      213: -6809339608299364128
+    second: joypixels-sprite-40-nature@2x_51
+  - first:
+      213: -2156022301247216068
+    second: joypixels-sprite-40-nature@2x_52
+  - first:
+      213: 638138689488889347
+    second: joypixels-sprite-40-nature@2x_53
+  - first:
+      213: -4604442386874557823
+    second: joypixels-sprite-40-nature@2x_54
+  - first:
+      213: -3879852248683071702
+    second: joypixels-sprite-40-nature@2x_55
+  - first:
+      213: -281639810911445636
+    second: joypixels-sprite-40-nature@2x_56
+  - first:
+      213: -2465998232387519485
+    second: joypixels-sprite-40-nature@2x_57
+  - first:
+      213: 3724484374112658853
+    second: joypixels-sprite-40-nature@2x_58
+  - first:
+      213: 6282774288744301424
+    second: joypixels-sprite-40-nature@2x_59
+  - first:
+      213: 686589210586134620
+    second: joypixels-sprite-40-nature@2x_60
+  - first:
+      213: 6087303922682080422
+    second: joypixels-sprite-40-nature@2x_61
+  - first:
+      213: 2910855112349282018
+    second: joypixels-sprite-40-nature@2x_62
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: joypixels-sprite-40-nature@2x_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 85
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02bbaf5a4516b1d30800000000000000
+      internalID: 4403220076874611488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-nature@2x_1
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 0
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 212cdc96deed57a90800000000000000
+      internalID: -7316696908329795054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-nature@2x_2
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 0
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5474584893d1ec70800000000000000
+      internalID: 8998706181464945758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-nature@2x_3
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 0
+        width: 79
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fded2b8961e2b7410800000000000000
+      internalID: 1475823977479986911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-nature@2x_4
+      rect:
+        serializedVersion: 2
+        x: 2540
+        y: 0
+        width: 84
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49999985}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b040dbb05bb4b890800000000000000
+      internalID: -7443118328713822023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-nature@2x_5
+      rect:
+        serializedVersion: 2
+        x: 2950
+        y: 0
+        width: 84
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49999985}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 142e1648fd1b51ab0800000000000000
+      internalID: -5037925034587200959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-nature@2x_6
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 0
+        width: 79
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2955330f53df72820800000000000000
+      internalID: 2893559693713823122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-nature@2x_7
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 0
+        width: 90
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89ad9977c5381cec0800000000000000
+      internalID: -3548410598224438632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-nature@2x_8
+      rect:
+        serializedVersion: 2
+        x: 3199
+        y: 0
+        width: 84
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49999985}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81a54dfc0993e51a0800000000000000
+      internalID: -6818949491667477992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-nature@2x_9
+      rect:
+        serializedVersion: 2
+        x: 3855
+        y: 0
+        width: 84
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49999985}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48dc01fd74edaf170800000000000000
+      internalID: 8213121270729985412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-nature@2x_10
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 0
+        width: 85
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de51fac4432bfeda0800000000000000
+      internalID: -5913311848019585555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-nature@2x_14
+      rect:
+        serializedVersion: 2
+        x: 1147
+        y: 0
+        width: 84
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db21c103f02ced7f0800000000000000
+      internalID: -585817531024141635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-nature@2x_15
+      rect:
+        serializedVersion: 2
+        x: 1231
+        y: 0
+        width: 84
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a70da07c0889a4c60800000000000000
+      internalID: 7803216983235416186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-nature@2x_16
+      rect:
+        serializedVersion: 2
+        x: 1313
+        y: 0
+        width: 84
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4892cff5c6ad5c930800000000000000
+      internalID: 4162973589575575940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-nature@2x_17
+      rect:
+        serializedVersion: 2
+        x: 1397
+        y: 0
+        width: 84
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 566d02e412ce81ff0800000000000000
+      internalID: -65042566808021403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-nature@2x_18
+      rect:
+        serializedVersion: 2
+        x: 1475
+        y: 0
+        width: 84
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f4ff52dcc09ff9b0800000000000000
+      internalID: -5044153848254434057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-nature@2x_19
+      rect:
+        serializedVersion: 2
+        x: 1561
+        y: 0
+        width: 84
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1967f32c615d8dff0800000000000000
+      internalID: -11024705343490415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-nature@2x_20
+      rect:
+        serializedVersion: 2
+        x: 1637
+        y: 0
+        width: 84
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63f63f4451b3a3120800000000000000
+      internalID: 2394291114437996342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-nature@2x_21
+      rect:
+        serializedVersion: 2
+        x: 1719
+        y: 0
+        width: 84
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d8112f82660346d0800000000000000
+      internalID: -3007553105775486767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-nature@2x_22
+      rect:
+        serializedVersion: 2
+        x: 1803
+        y: 0
+        width: 84
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d4d2e23fe26f97f0800000000000000
+      internalID: -603655045553924906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-nature@2x_23
+      rect:
+        serializedVersion: 2
+        x: 1885
+        y: 0
+        width: 84
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f3ba8d3be0e6e0e0800000000000000
+      internalID: -2240856463615806478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-nature@2x_24
+      rect:
+        serializedVersion: 2
+        x: 1969
+        y: 0
+        width: 84
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3818cd6b2605cc870800000000000000
+      internalID: 8704420564705247619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-nature@2x_25
+      rect:
+        serializedVersion: 2
+        x: 2053
+        y: 0
+        width: 84
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb1f60e2e3ce3f1f0800000000000000
+      internalID: -1012205739423895108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-nature@2x_26
+      rect:
+        serializedVersion: 2
+        x: 2135
+        y: 0
+        width: 84
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49999985}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66d5939f458c35730800000000000000
+      internalID: 3986750362437115238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-nature@2x_27
+      rect:
+        serializedVersion: 2
+        x: 2215
+        y: 0
+        width: 84
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49999985}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db8b2719a6f68b470800000000000000
+      internalID: 8410594807611832509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-nature@2x_28
+      rect:
+        serializedVersion: 2
+        x: 2705
+        y: 0
+        width: 84
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49999985}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f85a5aba9c3c0500800000000000000
+      internalID: 363732305159280887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-nature@2x_11
+      rect:
+        serializedVersion: 2
+        x: 4180
+        y: 0
+        width: 84
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49999985}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df4033481e3ce4fa0800000000000000
+      internalID: -5814494695535737603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-nature@2x_12
+      rect:
+        serializedVersion: 2
+        x: 4011
+        y: 0
+        width: 84
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49999985}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fdc3c9a292ca6830800000000000000
+      internalID: 4065275548824489457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-nature@2x_13
+      rect:
+        serializedVersion: 2
+        x: 3525
+        y: 0
+        width: 84
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49999985}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7e8992778652e6d0800000000000000
+      internalID: -2962710465113125250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-nature@2x_29
+      rect:
+        serializedVersion: 2
+        x: 4509
+        y: 0
+        width: 84
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49999985}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a03667ba33ca60940800000000000000
+      internalID: 5262082552548975370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-nature@2x_30
+      rect:
+        serializedVersion: 2
+        x: 4674
+        y: 0
+        width: 84
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49999985}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d34082e6d47bb4e0800000000000000
+      internalID: -1964848346145209388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-nature@2x_31
+      rect:
+        serializedVersion: 2
+        x: 4758
+        y: 0
+        width: 84
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49999985}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6f2ceb27765a9ef0800000000000000
+      internalID: -100672971824418963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-nature@2x_32
+      rect:
+        serializedVersion: 2
+        x: 5167
+        y: 0
+        width: 84
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49999985}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5d0b72ad1cba8a20800000000000000
+      internalID: 3065469331845090655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-nature@2x_33
+      rect:
+        serializedVersion: 2
+        x: 5406
+        y: 0
+        width: 84
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49999985}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 742575b9952f28c40800000000000000
+      internalID: 5513235360527110727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-nature@2x_34
+      rect:
+        serializedVersion: 2
+        x: 5002
+        y: 0
+        width: 84
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49999985}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67541e93e7f769200800000000000000
+      internalID: 186476614696125814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-nature@2x_35
+      rect:
+        serializedVersion: 2
+        x: 5494
+        y: 0
+        width: 84
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49999985}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72db90b858922c900800000000000000
+      internalID: 703170145363279143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-nature@2x_36
+      rect:
+        serializedVersion: 2
+        x: 5813
+        y: 0
+        width: 84
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49999985}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0025dc683f311ee00800000000000000
+      internalID: 1072160122950472192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-nature@2x_37
+      rect:
+        serializedVersion: 2
+        x: 5984
+        y: 0
+        width: 84
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49999985}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bbe2ea842b7081a0800000000000000
+      internalID: -6809307239705023560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-nature@2x_38
+      rect:
+        serializedVersion: 2
+        x: 6147
+        y: 0
+        width: 84
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49999985}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56c7f61108c2fb360800000000000000
+      internalID: 7187512458866556005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-nature@2x_39
+      rect:
+        serializedVersion: 2
+        x: 6396
+        y: 0
+        width: 84
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49999985}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae1415a3926ff47f0800000000000000
+      internalID: -626011166248713750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-nature@2x_40
+      rect:
+        serializedVersion: 2
+        x: 6559
+        y: 0
+        width: 84
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49999985}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50fdb66ec220474b0800000000000000
+      internalID: -5443723657716441339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-nature@2x_41
+      rect:
+        serializedVersion: 2
+        x: 6724
+        y: 0
+        width: 84
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49999985}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5005eccd7419d3e50800000000000000
+      internalID: 6790743550977789957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-nature@2x_42
+      rect:
+        serializedVersion: 2
+        x: 6806
+        y: 0
+        width: 84
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49999985}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eb0786a616b15230800000000000000
+      internalID: 3625879383409363940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-nature@2x_43
+      rect:
+        serializedVersion: 2
+        x: 7049
+        y: 0
+        width: 84
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49999985}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 122f2908d4eae9f50800000000000000
+      internalID: 6890136127816266273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-nature@2x_44
+      rect:
+        serializedVersion: 2
+        x: 7131
+        y: 0
+        width: 84
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49999985}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ef3907000e4fe8a0800000000000000
+      internalID: -6273709993878798364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-nature@2x_45
+      rect:
+        serializedVersion: 2
+        x: 7213
+        y: 0
+        width: 84
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49999985}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5872a16a37ea1ca70800000000000000
+      internalID: 8845542954863568773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-nature@2x_46
+      rect:
+        serializedVersion: 2
+        x: 7544
+        y: 0
+        width: 84
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49999985}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0745905ffa0f8e5c0800000000000000
+      internalID: -4185831215119903632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-nature@2x_47
+      rect:
+        serializedVersion: 2
+        x: 7626
+        y: 0
+        width: 84
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49999985}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49a754f0e6eea94b0800000000000000
+      internalID: -5432767843999057260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-nature@2x_48
+      rect:
+        serializedVersion: 2
+        x: 7953
+        y: 0
+        width: 84
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49999985}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5aecb47fe9792b430800000000000000
+      internalID: 3797264144836316837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-nature@2x_49
+      rect:
+        serializedVersion: 2
+        x: 8194
+        y: 0
+        width: 84
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49999985}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ab29e8463100d6e0800000000000000
+      internalID: -1814949317167207518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-nature@2x_50
+      rect:
+        serializedVersion: 2
+        x: 8604
+        y: 0
+        width: 84
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49999985}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f61feef9044aca80800000000000000
+      internalID: -8445863341457467663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-nature@2x_51
+      rect:
+        serializedVersion: 2
+        x: 8937
+        y: 0
+        width: 84
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49999985}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e0a15424bd5081a0800000000000000
+      internalID: -6809339608299364128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-nature@2x_52
+      rect:
+        serializedVersion: 2
+        x: 9346
+        y: 0
+        width: 84
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49999985}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c36e65ed3254412e0800000000000000
+      internalID: -2156022301247216068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-nature@2x_53
+      rect:
+        serializedVersion: 2
+        x: 9593
+        y: 0
+        width: 84
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49999985}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3062b60d1cf1bd800800000000000000
+      internalID: 638138689488889347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-nature@2x_54
+      rect:
+        serializedVersion: 2
+        x: 10000
+        y: 0
+        width: 84
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49999985}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18a17956b0cb910c0800000000000000
+      internalID: -4604442386874557823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-nature@2x_55
+      rect:
+        serializedVersion: 2
+        x: 10331
+        y: 0
+        width: 84
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49999985}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a27be38afeef72ac0800000000000000
+      internalID: -3879852248683071702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-nature@2x_56
+      rect:
+        serializedVersion: 2
+        x: 10245
+        y: 0
+        width: 84
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49999985}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7dd30c851a671cf0800000000000000
+      internalID: -281639810911445636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-nature@2x_57
+      rect:
+        serializedVersion: 2
+        x: 10821
+        y: 0
+        width: 84
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49999985}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30cfccd4ca307cdd0800000000000000
+      internalID: -2465998232387519485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-nature@2x_58
+      rect:
+        serializedVersion: 2
+        x: 11148
+        y: 0
+        width: 84
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49999985}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a56a7a1ec600b330800000000000000
+      internalID: 3724484374112658853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-nature@2x_59
+      rect:
+        serializedVersion: 2
+        x: 11232
+        y: 0
+        width: 84
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49999985}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 073cf849de5e03750800000000000000
+      internalID: 6282774288744301424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-nature@2x_60
+      rect:
+        serializedVersion: 2
+        x: 10494
+        y: 0
+        width: 84
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49999985}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c583a93df31478900800000000000000
+      internalID: 686589210586134620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-nature@2x_61
+      rect:
+        serializedVersion: 2
+        x: 10576
+        y: 0
+        width: 84
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49999985}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6acae4f6aa27a7450800000000000000
+      internalID: 6087303922682080422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-nature@2x_62
+      rect:
+        serializedVersion: 2
+        x: 10662
+        y: 0
+        width: 84
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49999985}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ee65346d4f656820800000000000000
+      internalID: 2910855112349282018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: daf176ae78ac84a4e81ee242aab00c06
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

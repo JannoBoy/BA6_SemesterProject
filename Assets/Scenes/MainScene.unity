@@ -1160,5 +1160,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FirebaseAuthentication
       objectReference: {fileID: 0}
+    - target: {fileID: 7929819659518137719, guid: 615ea04002c3fe04588d846853ec6f08,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 615ea04002c3fe04588d846853ec6f08, type: 3}
