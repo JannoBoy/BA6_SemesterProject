@@ -11,9 +11,7 @@ public class Gamemanager : MonoBehaviour
     [Header("Settings")]
     public GameObject Menu_MainMenu;
     public Camera camera_Map, camera_Depth;
-    public GameObject SelfiePreview;
     public GameObject Canvas_Selfie;
-    public GameObject camera_Selfie;
     public GameObject Canvas_Landmarks;
     public GameObject Canvas_Debug;
 
@@ -60,12 +58,12 @@ public class Gamemanager : MonoBehaviour
 
     public void StartGame()
     {
-        camera_Map.enabled = true;
-        camera_Depth.enabled = true;
+        //camera_Map.enabled = true;
+        //camera_Depth.enabled = true;
 
         Menu_MainMenu.SetActive(false);
 
-        StartCoroutine(InitWebcam());
+        //StartCoroutine(InitWebcam());
     }
 
     IEnumerator InitWebcam()
@@ -79,7 +77,6 @@ public class Gamemanager : MonoBehaviour
     IEnumerator EnableSelfiePreview()
     {
         Canvas_Selfie.SetActive(true);
-        //SelfiePreview.SetActive(true);
         Canvas_Landmarks.SetActive(false);
         Canvas_Debug.SetActive(false);
         camera_Map.enabled = false;
@@ -94,7 +91,6 @@ public class Gamemanager : MonoBehaviour
         Canvas_Landmarks.SetActive(true);
         Canvas_Debug.SetActive(true);
         Canvas_Selfie.SetActive(false);
-        //SelfiePreview.SetActive(false);
     }
     public void Btn_OpenLandmarkMenu(string name_Landmark)
     {
@@ -187,6 +183,7 @@ public class Gamemanager : MonoBehaviour
         {
             btn_Previous.SetActive(false);
             btn_Next.SetActive(true);
+            btn_InteractionMenu.SetActive(false);
         }
         else if (_slideshowIndex == currentLandmark.data.text_dialogues.Count - 1)
         {
@@ -206,6 +203,7 @@ public class Gamemanager : MonoBehaviour
         {
             btn_Previous.SetActive(true);
             btn_Next.SetActive(true);
+            btn_InteractionMenu.SetActive(false);
         }
 
     }
