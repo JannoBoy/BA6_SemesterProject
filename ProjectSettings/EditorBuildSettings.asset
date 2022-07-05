@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/MapboxPackage/Mapbox/Examples/2_AstronautGame/AstronautGame.unity
     guid: 23b3522d4f6fa450eb781397db4b26ed
   - enabled: 1
+    path: Assets/Scenes/InitiateFirebaseScene.unity
+    guid: 8c641ac2706ab724b806669115b5914c
+  - enabled: 1
     path: Assets/Scenes/TestingMessage.unity
     guid: feb550ffd43e6a04d8050e670d0cf0c5
   m_configObjects: {}

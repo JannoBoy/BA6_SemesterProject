@@ -23,6 +23,10 @@ public class PointOfInterestManagerScript : MonoBehaviour
 
     public string[] myMessages;
 
+    public GameObject textElement;
+
+    public GameObject textHolder;
+
     private Material myBasicMaterial;
 
     private void Awake()
@@ -117,6 +121,18 @@ public class PointOfInterestManagerScript : MonoBehaviour
             string messagePlace = (messageNumber).ToString();
 
             var DBTaskUpdate = dBReference.Child("pointOfInterest").Child(myName).Child("messages").Child(messagePlace).SetValueAsync(message);
+        }
+    }
+
+    public void SpawnMessages()
+    {
+        int i = 0;
+
+        foreach(string newText in myMessages)
+        {
+            GameObject newTextBox = Instantiate(textElement, textHolder.transform);
+            newTextBox.GetComponent<TextLoaderScript>().NewTextElement(myMessages[i]);
+            i++;
         }
     }
 

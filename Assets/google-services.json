@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "852715508592",
+    "firebase_url": "https://citys-dna-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "citys-dna",
+    "storage_bucket": "citys-dna.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:852715508592:android:012d2f6f080ae47ccd75b5",
+        "android_client_info": {
+          "package_name": "com.TheHappyBunchProductions.BA6_SemesterProject_CityDNA"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "852715508592-hraj9909jjdjnq8qjs9jc42h6ntfhp70.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.TheHappyBunchProductions.BA6_SemesterProject_CityDNA",
+            "certificate_hash": "a3a8782fde9a3c6a52a6697d993f5d9a4ae53932"
+          }
+        },
+        {
+          "client_id": "852715508592-uj3fc3jj6gqtu3cmc0slst228osgpjhs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDHD6HRCIfVj4vWd52Z-4flkeC62pJ-EHY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "852715508592-uj3fc3jj6gqtu3cmc0slst228osgpjhs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
