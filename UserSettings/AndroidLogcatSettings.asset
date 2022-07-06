@@ -1,41 +1,47 @@
 {
-    "m_SelectedDeviceId": "R58M57DMAJV",
+    "m_SelectedDeviceId": "XTX7N18907002546",
     "m_SelectedPackage": {
-        "deviceId": "R58M57DMAJV",
-        "name": "com.TheHappyBunchProductions.BA6_SemesterProject_CityDNA",
-        "processId": 31872,
+        "deviceId": "",
+        "name": "",
+        "processId": 0,
         "exited": false
     },
     "m_SelectedPriority": 0,
     "m_KnownPackagesForSerialization": [
         {
-            "deviceId": "R58M57DMAJV",
+            "deviceId": "XTX7N18907002546",
             "name": "com.TheHappyBunchProductions.BA6_SemesterProject_CityDNA",
-            "processId": 11537,
+            "processId": 6552,
             "exited": true
         },
         {
-            "deviceId": "R58M57DMAJV",
-            "name": "com.sec.android.app.launcher",
-            "processId": 9886,
-            "exited": false
-        },
-        {
-            "deviceId": "R58M57DMAJV",
+            "deviceId": "XTX7N18907002546",
             "name": "com.TheHappyBunchProductions.BA6_SemesterProject_CityDNA",
-            "processId": 22161,
+            "processId": 8080,
             "exited": true
         },
         {
-            "deviceId": "R58M57DMAJV",
+            "deviceId": "XTX7N18907002546",
             "name": "com.TheHappyBunchProductions.BA6_SemesterProject_CityDNA",
-            "processId": 25992,
+            "processId": 3325,
             "exited": true
         },
         {
-            "deviceId": "R58M57DMAJV",
+            "deviceId": "XTX7N18907002546",
             "name": "com.TheHappyBunchProductions.BA6_SemesterProject_CityDNA",
-            "processId": 31872,
+            "processId": 5307,
+            "exited": true
+        },
+        {
+            "deviceId": "XTX7N18907002546",
+            "name": "com.TheHappyBunchProductions.BA6_SemesterProject_CityDNA",
+            "processId": 6776,
+            "exited": true
+        },
+        {
+            "deviceId": "XTX7N18907002546",
+            "name": "ginlemon.flowerfree",
+            "processId": 15551,
             "exited": false
         }
     ],
@@ -47,7 +53,7 @@
             },
             {
                 "m_Name": "No Filter",
-                "m_Selected": true
+                "m_Selected": false
             },
             {
                 "m_Name": "",
@@ -63,7 +69,7 @@
             },
             {
                 "m_Name": "Unity",
-                "m_Selected": false
+                "m_Selected": true
             },
             {
                 "m_Name": "CRASH",

@@ -9,11 +9,13 @@ public class Gamemanager : MonoBehaviour
 {
     public static Gamemanager instance;
     [Header("Settings")]
-    public GameObject Menu_MainMenu;
-    public Camera camera_Map, camera_Depth;
+    //public GameObject Menu_MainMenu;
+    public Camera camera_Map;
+    public Camera camera_Selfie;
     public GameObject Canvas_Selfie;
+    public GameObject Canvas_Login;
     public GameObject Canvas_Landmarks;
-    public GameObject Canvas_Debug;
+    //public GameObject Canvas_Debug;
 
     [Header("Landmark Main")]
     public GameObject Menu_Landmark_Main;
@@ -61,9 +63,24 @@ public class Gamemanager : MonoBehaviour
         //camera_Map.enabled = true;
         //camera_Depth.enabled = true;
 
-        Menu_MainMenu.SetActive(false);
+        //Menu_MainMenu.SetActive(false);
 
         //StartCoroutine(InitWebcam());
+    }
+
+    public void Btn_StartCamera()
+    {
+        StartCoroutine(InitWebcam());
+    }
+
+    public void Btn_TakeScreenshot()
+    {
+
+    }
+
+    public void Btn_CloseCamera()
+    {
+        DisableSelfiePreview();
     }
 
     IEnumerator InitWebcam()
@@ -77,21 +94,24 @@ public class Gamemanager : MonoBehaviour
     IEnumerator EnableSelfiePreview()
     {
         Canvas_Selfie.SetActive(true);
+        camera_Selfie.enabled = true;
+
+        Canvas_Login.SetActive(false);
         Canvas_Landmarks.SetActive(false);
-        Canvas_Debug.SetActive(false);
         camera_Map.enabled = false;
-        camera_Depth.enabled = false;
         yield return null;
     }
 
-    public void DisableSelfiePreview()
+    void DisableSelfiePreview()
     {
+        CameraPreview.instance.StopWebcam();
         camera_Map.enabled = true;
-        camera_Depth.enabled = true;
         Canvas_Landmarks.SetActive(true);
-        Canvas_Debug.SetActive(true);
+
+        camera_Selfie.enabled = false;
         Canvas_Selfie.SetActive(false);
     }
+
     public void Btn_OpenLandmarkMenu(string name_Landmark)
     {
         Landmark myLandmark = GetLandmark(name_Landmark);
@@ -157,11 +177,6 @@ public class Gamemanager : MonoBehaviour
     public void Btn_NextCamera()
     {
         CameraPreview.instance.NextWebcam();
-    }
-
-    public void Btn_CloseCameraPreview()
-    {
-
     }
 
     void UpdateLandmarkMenuInfo(LandmarkData _data)
