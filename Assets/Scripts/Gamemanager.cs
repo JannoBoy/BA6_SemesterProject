@@ -75,7 +75,7 @@ public class Gamemanager : MonoBehaviour
 
     public void Btn_TakeScreenshot()
     {
-
+        Capture.instance.TakeScreenShot();
     }
 
     public void Btn_CloseCamera()

@@ -101,7 +101,7 @@ public class TouchControls : MonoBehaviour
 
 	void HandleTouch()
 	{
-		float zoomFactor = 0.0f;
+		//float zoomFactor = 0.0f;
 		//pinch to zoom. 
 		switch (Input.touchCount)
 		{

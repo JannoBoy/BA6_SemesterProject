@@ -321,6 +321,7 @@ GameObject:
   m_Component:
   - component: {fileID: 689932402}
   - component: {fileID: 689932403}
+  - component: {fileID: 689932404}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -378,6 +379,22 @@ MonoBehaviour:
   - name: WDR
     data: {fileID: 11400000, guid: fed1565085f91cc408fc392ec3740ead, type: 2}
   _slideshowIndex: 0
+--- !u!114 &689932404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 689932401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a808a1ae26c0c054cace1cbc92dc4bcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myCamera: {fileID: 1410983}
+  designatedPath: 
+  rt: {fileID: 0}
+  screenShot: {fileID: 0}
 --- !u!1 &1002535125 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4584893739617181637, guid: 8dc3bb25c6515e54881cd818eb465d77,
@@ -391,6 +408,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 240613246274366905, guid: b9a8ba27dc42b95499e5e9f25a1ec70e,
+        type: 3}
+      propertyPath: m_Name
+      value: Button_TakeSelfie
+      objectReference: {fileID: 0}
+    - target: {fileID: 1722033934093552958, guid: b9a8ba27dc42b95499e5e9f25a1ec70e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 689932403}
+    - target: {fileID: 1722033934093552958, guid: b9a8ba27dc42b95499e5e9f25a1ec70e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Btn_TakeScreenshot
+      objectReference: {fileID: 0}
     - target: {fileID: 6690986768627836576, guid: b9a8ba27dc42b95499e5e9f25a1ec70e,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target

@@ -16,8 +16,11 @@ public class Capture : MonoBehaviour
         //                     Application.dataPath,
         //                     width, height,
         //                     System.DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss"));
-        return string.Format("{0}/screen_{1}x{2}_{3}.jpg",
-                             designatedPath,
+        //return string.Format("{0}/screen_{1}x{2}_{3}.jpg",
+        //                     designatedPath,
+        //                     width, height,
+        //                     System.DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss"));
+        return string.Format("screen_{0}x{1}_{2}.jpg",
                              width, height,
                              System.DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss"));
     }
@@ -39,6 +42,12 @@ public class Capture : MonoBehaviour
         takeScreenShot = true;
     }
 
+    NativeGallery.MediaSaveCallback callbackFct;
+
+    void CallbackFctImp(bool flag, string _path)
+    {
+        Debug.Log("inside yolo: "+_path);
+    }
     void LateUpdate()
     {
         if (takeScreenShot)
@@ -48,7 +57,9 @@ public class Capture : MonoBehaviour
 
             byte[] bytes = screenShot.EncodeToJPG(100);
             string filename = ScreenShotName(Screen.width, Screen.height);
-            System.IO.File.WriteAllBytes(filename, bytes);
+            //System.IO.File.WriteAllBytes(filename, bytes);
+            callbackFct = CallbackFctImp;
+            NativeGallery.SaveImageToGallery(bytes, "CityDNA", filename, callbackFct);
             Debug.Log(string.Format("Took screenshot to: {0}", filename));
             //here we should set the latest file path incase we wish to open the last screenshot taken
             takeScreenShot = false;
