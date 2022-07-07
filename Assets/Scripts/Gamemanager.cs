@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 using NatSuite.Examples.Components;
+using System;
 
 public class Gamemanager : MonoBehaviour
 {
@@ -15,7 +16,8 @@ public class Gamemanager : MonoBehaviour
     public GameObject Canvas_Selfie;
     public GameObject Canvas_Login;
     public GameObject Canvas_Landmarks;
-    //public GameObject Canvas_Debug;
+    public GameObject Camera_CaptureEffect;
+    public GameObject Camera_Buttons;
 
     [Header("Landmark Main")]
     public GameObject Menu_Landmark_Main;
@@ -75,7 +77,29 @@ public class Gamemanager : MonoBehaviour
 
     public void Btn_TakeScreenshot()
     {
+        StartCoroutine(CaptureProcess());
+        
+        
+    }
+
+    IEnumerator CaptureProcess()
+    {
+        //disable the camera UI buttons and enable capture effect
+        Camera_Buttons.SetActive(false);
+        //capture effect
+        yield return StartCoroutine(CaptureEffect());
         Capture.instance.TakeScreenShot();
+        Camera_Buttons.SetActive(true);
+    }
+
+    IEnumerator CaptureEffect()
+    {
+        
+        Camera_CaptureEffect.SetActive(true);
+        yield return new WaitForSeconds(0.01f);
+        Camera_CaptureEffect.SetActive(false);
+        yield return new WaitForSeconds(0.1f);
+
     }
 
     public void Btn_CloseCamera()

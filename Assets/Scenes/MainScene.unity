@@ -360,6 +360,8 @@ MonoBehaviour:
   Canvas_Selfie: {fileID: 1380559905}
   Canvas_Login: {fileID: 46579022}
   Canvas_Landmarks: {fileID: 1002535125}
+  Camera_CaptureEffect: {fileID: 1380559907}
+  Camera_Buttons: {fileID: 1380559906}
   Menu_Landmark_Main: {fileID: 1606291603}
   text_LandmarkTitle: {fileID: 1606291602}
   image_LandmarkImage: {fileID: 1606291601}
@@ -598,6 +600,18 @@ PrefabInstance:
 --- !u!1 &1380559905 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6690986768814701275, guid: b9a8ba27dc42b95499e5e9f25a1ec70e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1380559904}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1380559906 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1107460654689105037, guid: b9a8ba27dc42b95499e5e9f25a1ec70e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1380559904}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1380559907 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1973199934629750796, guid: b9a8ba27dc42b95499e5e9f25a1ec70e,
     type: 3}
   m_PrefabInstance: {fileID: 1380559904}
   m_PrefabAsset: {fileID: 0}
