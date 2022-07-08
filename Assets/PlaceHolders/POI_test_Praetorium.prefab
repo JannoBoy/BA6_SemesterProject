@@ -108,11 +108,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dependencyStatus: 0
+  authManager: {fileID: 0}
   myName: Praetorium
+  uI_Name: 
   messageNumber: 0
   playerEnteredMaterial: {fileID: 2100000, guid: cf6e84d1f2f9a7d49a16273bdbd5491d,
     type: 2}
   myMessages: []
+  textElement: {fileID: 4456449175302852207, guid: 5a0974ac27118b54e819ce75224a20d7,
+    type: 3}
+  textHolder: {fileID: 0}
+  _mainCamera: {fileID: 0}
 --- !u!65 &510059552032776574
 BoxCollider:
   m_ObjectHideFlags: 0
