@@ -28,11 +28,20 @@ public class Gamemanager : MonoBehaviour
     public GameObject Menu_Landmark_Slideshow;
     public Image image_Slideshow_Frogo;
     public Image image_Slideshow;
-    public TMP_Text text_Slideshow;
+    public TMP_Text text_smallDialogue;
+    public TMP_Text text_bigDialogue;
     public GameObject btn_Next;
     public GameObject btn_Previous;
     public GameObject btn_InteractionMenu;
     public TMP_Text text_PageCounter;
+
+    [Header("Landmark BigDialogue")]
+    public GameObject Container_Bigdialogue;
+    public GameObject Container_Smalldialogue;
+    //public GameObject btn_Next;
+    //public GameObject btn_Previous;
+    //public GameObject btn_InteractionMenu;
+    //public TMP_Text text_PageCounter;
 
     [Header("Landmark Interaction")]
     public GameObject Menu_Landmark_Interaction;
@@ -83,8 +92,8 @@ public class Gamemanager : MonoBehaviour
     public void Btn_TakeScreenshot()
     {
         StartCoroutine(CaptureProcess());
-        
-        
+
+
     }
 
     IEnumerator CaptureProcess()
@@ -99,7 +108,7 @@ public class Gamemanager : MonoBehaviour
 
     IEnumerator CaptureEffect()
     {
-        
+
         Camera_CaptureEffect.SetActive(true);
         yield return new WaitForSeconds(0.01f);
         Camera_CaptureEffect.SetActive(false);
@@ -218,37 +227,87 @@ public class Gamemanager : MonoBehaviour
 
     void UpdateLandmarkSlideshowInfo(LandmarkData _data)
     {
-        image_Slideshow.sprite = _data.text_dialogues[_slideshowIndex].dialogueImage;
-        text_Slideshow.SetText(_data.text_dialogues[_slideshowIndex].text);
+        if (_data.text_dialogues[_slideshowIndex].dialogueImage != null)
+        {
+            Container_Bigdialogue.SetActive(false);
+            image_Slideshow.sprite = _data.text_dialogues[_slideshowIndex].dialogueImage;
+            text_smallDialogue.SetText(_data.text_dialogues[_slideshowIndex].text);
+            image_Slideshow.gameObject.SetActive(true);
+            Container_Smalldialogue.SetActive(true);
+        }
+        else
+        {
+            Container_Smalldialogue.SetActive(false);
+            image_Slideshow.gameObject.SetActive(false);
+            text_bigDialogue.SetText(_data.text_dialogues[_slideshowIndex].text);
+            Container_Bigdialogue.SetActive(true);
+
+        }
+
         text_PageCounter.SetText((_slideshowIndex).ToString() + "/" + (currentLandmark.data.text_dialogues.Count - 1).ToString());
 
         //buttons visibility
-        if (_slideshowIndex < currentLandmark.data.text_dialogues.Count - 1)
+        //if index >1
+        //if at end
+        //else only one page
+        //at end
+        if (_slideshowIndex == currentLandmark.data.text_dialogues.Count - 1)
         {
-            btn_Previous.SetActive(false);
-            btn_Next.SetActive(true);
-            btn_InteractionMenu.SetActive(false);
-        }
-        else if (_slideshowIndex == currentLandmark.data.text_dialogues.Count - 1)
-        {
+            //if more than one page
             if (_slideshowIndex > 1)
             {
                 btn_Previous.SetActive(true);
             }
+            //only one page
             else
             {
                 btn_Previous.SetActive(false);
             }
-
             btn_Next.SetActive(false);
             btn_InteractionMenu.SetActive(true);
         }
         else
         {
-            btn_Previous.SetActive(true);
-            btn_Next.SetActive(true);
-            btn_InteractionMenu.SetActive(false);
+            if (_slideshowIndex == 1)
+            {
+                btn_Previous.SetActive(false);
+                btn_Next.SetActive(true);
+                btn_InteractionMenu.SetActive(false);
+            }
+            else
+            {
+                btn_Previous.SetActive(true);
+                btn_Next.SetActive(true);
+                btn_InteractionMenu.SetActive(false);
+            }
         }
+
+        //if (_slideshowIndex < currentLandmark.data.text_dialogues.Count - 1)
+        //{
+        //    btn_Previous.SetActive(false);
+        //    btn_Next.SetActive(true);
+        //    btn_InteractionMenu.SetActive(false);
+        //}
+        //else if (_slideshowIndex == currentLandmark.data.text_dialogues.Count - 1)
+        //{
+        //    if (_slideshowIndex > 1)
+        //    {
+        //        btn_Previous.SetActive(true);
+        //    }
+        //    else
+        //    {
+        //        btn_Previous.SetActive(false);
+        //    }
+
+        //    btn_Next.SetActive(false);
+        //    btn_InteractionMenu.SetActive(true);
+        //}
+        //else
+        //{
+        //    btn_Previous.SetActive(true);
+        //    btn_Next.SetActive(true);
+        //    btn_InteractionMenu.SetActive(false);
+        //}
 
     }
 

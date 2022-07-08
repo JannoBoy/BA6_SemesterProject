@@ -20,3 +20,7 @@ MonoBehaviour:
     dialogueImage: {fileID: 21300000, guid: 1f5aa8b44572b0c488729e515dddad4f, type: 3}
   - text: testing another text WDR 3
     dialogueImage: {fileID: 21300000, guid: 8fcb0d7f3a289434a93958bcb22d2a20, type: 3}
+  - text: testing another text WDR 4
+    dialogueImage: {fileID: 0}
+  - text: testing another text WDR 5
+    dialogueImage: {fileID: 21300000, guid: 8fcb0d7f3a289434a93958bcb22d2a20, type: 3}
