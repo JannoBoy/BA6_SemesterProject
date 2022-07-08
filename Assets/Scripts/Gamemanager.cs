@@ -40,6 +40,11 @@ public class Gamemanager : MonoBehaviour
 
     public Landmark[] Landmarks;
 
+    [Header("Message Interaction")]
+    public PointOfInterestManagerScript landmark_Manager;
+    public GameObject textElement;
+    public GameObject textHolder;
+
     [Header("Camera settings")]
 
     string currentLandmarkName;
@@ -289,5 +294,6 @@ public class Gamemanager : MonoBehaviour
         {
             CameraPreview.instance.NextWebcam();
         }
+
     }
 }

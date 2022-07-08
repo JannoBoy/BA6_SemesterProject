@@ -64,6 +64,12 @@ MonoBehaviour:
     m_HashCode: -1450834856
   - m_ElementType: 2
     m_Unicode: 65534
+    m_GlyphIndex: 21
+    m_Scale: 1
+    m_Name: joypixels-sprite-40-nature@2x_5
+    m_HashCode: -1450834850
+  - m_ElementType: 2
+    m_Unicode: 65534
     m_GlyphIndex: 4
     m_Scale: 1
     m_Name: joypixels-sprite-40-nature@2x_6
@@ -166,7 +172,7 @@ MonoBehaviour:
     m_HashCode: -632910002
   - m_ElementType: 2
     m_Unicode: 65534
-    m_GlyphIndex: 21
+    m_GlyphIndex: 4
     m_Scale: 1
     m_Name: joypixels-sprite-40-nature@2x_4
     m_HashCode: -1450834849
@@ -176,12 +182,6 @@ MonoBehaviour:
     m_Scale: 1
     m_Name: joypixels-sprite-40-nature@2x_28
     m_HashCode: -632910015
-  - m_ElementType: 2
-    m_Unicode: 65534
-    m_GlyphIndex: 23
-    m_Scale: 1
-    m_Name: joypixels-sprite-40-nature@2x_5
-    m_HashCode: -1450834850
   - m_ElementType: 2
     m_Unicode: 65534
     m_GlyphIndex: 24

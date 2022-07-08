@@ -12,6 +12,7 @@ public class PointOfInterestManagerScript : MonoBehaviour
     public FirebaseAuth auth;
     public FirebaseUser User;
     public DatabaseReference dBReference;
+    public FirebaseAuthManager authManager;
 
     public string myName;
     public int messageNumber;
@@ -27,17 +28,25 @@ public class PointOfInterestManagerScript : MonoBehaviour
 
     public GameObject textHolder;
 
+    public Camera _mainCamera;
+
     private Material myBasicMaterial;
 
     private void Awake()
     {
+        _mainCamera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
+        authManager = GameObject.FindGameObjectWithTag("FirebaseAuthManager").GetComponent<FirebaseAuthManager>();
+
         FirebaseApp.CheckAndFixDependenciesAsync().ContinueWith(task =>
         {
             dependencyStatus = task.Result;
             if (dependencyStatus == DependencyStatus.Available)
             {
                 //If they are avalible Initialize Firebase
-                InitializeFirebase();
+                //InitializeFirebase();
+                auth = authManager.auth;
+                User = authManager.User;
+                dBReference = authManager.dBReference;
             }
             else
             {
@@ -48,7 +57,9 @@ public class PointOfInterestManagerScript : MonoBehaviour
 
     public void LoadMessages()
     {
-
+        auth = authManager.auth;
+        User = authManager.User;
+        dBReference = authManager.dBReference;
         StartCoroutine(GetMessages());
     }
 
@@ -136,9 +147,45 @@ public class PointOfInterestManagerScript : MonoBehaviour
         }
     }
 
+    private void ClickOnObject()
+    {
+        if(_mainCamera == null)
+        {
+            _mainCamera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
+        }
+
+       
+        //Ray _ray = _mainCamera.ScreenPointToRay(Input.mousePosition);
+        for (int i = 0; i < Input.touchCount; ++i)
+        {
+            if (Input.GetTouch(i).phase == TouchPhase.Began)
+            {
+                Ray _ray = _mainCamera.ScreenPointToRay(Input.GetTouch(i).position);
+                RaycastHit _hit;
+                if (Physics.Raycast(_ray, out _hit, 1000f))
+                {
+                    if (_hit.transform == transform)
+                    {
+                        Debug.Log("Clicked On Me");
+                        Gamemanager.instance.landmark_Manager = GetComponent<PointOfInterestManagerScript>();
+                    }
+                }
+            }
+        }
+    }
+    
+
     void Start()
     {
         LoadMessages();
+    }
+
+    private void Update()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            ClickOnObject();
+        }
     }
 
 

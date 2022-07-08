@@ -380,6 +380,9 @@ MonoBehaviour:
     data: {fileID: 11400000, guid: 081fe36e7f1d64546802d2536e07f002, type: 2}
   - name: WDR
     data: {fileID: 11400000, guid: fed1565085f91cc408fc392ec3740ead, type: 2}
+  landmark_Manager: {fileID: 0}
+  textElement: {fileID: 0}
+  textHolder: {fileID: 0}
   _slideshowIndex: 0
 --- !u!114 &689932404
 MonoBehaviour:
@@ -939,6 +942,11 @@ PrefabInstance:
     - target: {fileID: 4067472250421282534, guid: 38de0975b42ce6a4fa010f964a4e82f6,
         type: 3}
       propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4067472250547658823, guid: 38de0975b42ce6a4fa010f964a4e82f6,
+        type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4067472250547658824, guid: 38de0975b42ce6a4fa010f964a4e82f6,
@@ -1987,6 +1995,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7929819659518137719, guid: 615ea04002c3fe04588d846853ec6f08,
+        type: 3}
+      propertyPath: m_TagString
+      value: FirebaseAuthManager
       objectReference: {fileID: 0}
     - target: {fileID: 7929819659737454087, guid: 615ea04002c3fe04588d846853ec6f08,
         type: 3}
