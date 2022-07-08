@@ -15,6 +15,7 @@ public class PointOfInterestManagerScript : MonoBehaviour
     public FirebaseAuthManager authManager;
 
     public string myName;
+    public string uI_Name;
     public int messageNumber;
 
     private MeshRenderer myMesh;
@@ -36,6 +37,8 @@ public class PointOfInterestManagerScript : MonoBehaviour
     {
         _mainCamera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
         authManager = GameObject.FindGameObjectWithTag("FirebaseAuthManager").GetComponent<FirebaseAuthManager>();
+        AssignMessageComponent(Gamemanager.instance.textHolder);
+
 
         FirebaseApp.CheckAndFixDependenciesAsync().ContinueWith(task =>
         {
@@ -147,6 +150,11 @@ public class PointOfInterestManagerScript : MonoBehaviour
         }
     }
 
+    public void AssignMessageComponent(GameObject _textHolder)
+    {
+        textHolder = _textHolder;
+    }
+
     private void ClickOnObject()
     {
         if(_mainCamera == null)
@@ -155,12 +163,12 @@ public class PointOfInterestManagerScript : MonoBehaviour
         }
 
        
-        //Ray _ray = _mainCamera.ScreenPointToRay(Input.mousePosition);
-        for (int i = 0; i < Input.touchCount; ++i)
-        {
-            if (Input.GetTouch(i).phase == TouchPhase.Began)
-            {
-                Ray _ray = _mainCamera.ScreenPointToRay(Input.GetTouch(i).position);
+        Ray _ray = _mainCamera.ScreenPointToRay(Input.mousePosition);
+       // for (int i = 0; i < Input.touchCount; ++i)
+        //{
+          //  if (Input.GetTouch(i).phase == TouchPhase.Began)
+           // {
+               // Ray _ray = _mainCamera.ScreenPointToRay(Input.GetTouch(i).position);
                 RaycastHit _hit;
                 if (Physics.Raycast(_ray, out _hit, 1000f))
                 {
@@ -168,10 +176,11 @@ public class PointOfInterestManagerScript : MonoBehaviour
                     {
                         Debug.Log("Clicked On Me");
                         Gamemanager.instance.landmark_Manager = GetComponent<PointOfInterestManagerScript>();
+                        Gamemanager.instance.Btn_OpenLandmarkMenu(uI_Name);
                     }
                 }
-            }
-        }
+           // }
+      //  }
     }
     
 

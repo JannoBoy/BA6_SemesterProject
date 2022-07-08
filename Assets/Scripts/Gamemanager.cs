@@ -51,8 +51,8 @@ public class Gamemanager : MonoBehaviour
 
     [Header("Message Interaction")]
     public PointOfInterestManagerScript landmark_Manager;
-    public GameObject textElement;
     public GameObject textHolder;
+    public TMP_Text txt_preview;
 
     [Header("Camera settings")]
 
@@ -88,12 +88,18 @@ public class Gamemanager : MonoBehaviour
     {
         StartCoroutine(InitWebcam());
     }
+    
 
     public void Btn_TakeScreenshot()
     {
         StartCoroutine(CaptureProcess());
+       
+    }
 
-
+    public void Btn_SendMessage()
+    {
+        string sendText = txt_preview.text;
+        landmark_Manager.WriteMessage(sendText);
     }
 
     IEnumerator CaptureProcess()
@@ -215,6 +221,11 @@ public class Gamemanager : MonoBehaviour
     public void Btn_NextCamera()
     {
         CameraPreview.instance.NextWebcam();
+    }
+
+    public void Btn_Messages()
+    {
+        landmark_Manager.SpawnMessages();
     }
 
     void UpdateLandmarkMenuInfo(LandmarkData _data)
