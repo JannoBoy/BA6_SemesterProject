@@ -14,7 +14,7 @@ public class TouchControls : MonoBehaviour
 	Transform _ARPlayer;
 
 	Quaternion _originalRotation;
-
+	float _originalHeight;
 	[SerializeField]
 	float _zoomSpeed = 50f;
 
@@ -189,7 +189,7 @@ public class TouchControls : MonoBehaviour
 	void Awake()
 	{
 		_originalRotation = Quaternion.Euler(0, transform.eulerAngles.y, 0);
-
+		_originalHeight = transform.position.y;
 		if (_camera == null)
 		{
 			_camera = GetComponent<Camera>();
@@ -211,11 +211,13 @@ public class TouchControls : MonoBehaviour
 
 	public void ZoomOut()
     {
+		_followTarget = false;
 		transform.localPosition -= (transform.forward * _zoomSpeed);
 	}
 
 	public void ZoomIn()
     {
+		_followTarget = false;
 		transform.localPosition += (transform.forward * _zoomSpeed);
 	}
 
@@ -225,7 +227,8 @@ public class TouchControls : MonoBehaviour
     }
 	public void ResetPosition()
     {
-		Vector3 newPos = new Vector3(_ARPlayer.localPosition.x, _camera.transform.localPosition.y, _ARPlayer.localPosition.z);
+
+		Vector3 newPos = new Vector3(_ARPlayer.localPosition.x, _originalHeight, _ARPlayer.localPosition.z);
 		_camera.transform.localPosition = newPos;
     }
 

@@ -18,6 +18,7 @@ public class Gamemanager : MonoBehaviour
     public GameObject Canvas_Landmarks;
     public GameObject Camera_CaptureEffect;
     public GameObject Camera_Buttons;
+    public GameObject Map_Controls;
 
     [Header("Landmark Main")]
     public GameObject Menu_Landmark_Main;
@@ -176,7 +177,7 @@ public class Gamemanager : MonoBehaviour
             _slideshowIndex = 1;
             //display landmark menu
             Menu_Landmark_Main.SetActive(true);
-
+            Map_Controls.SetActive(false);
         }
 
 
@@ -190,6 +191,7 @@ public class Gamemanager : MonoBehaviour
         Menu_Landmark_Main.SetActive(false);
         Menu_Landmark_Slideshow.SetActive(false);
         Menu_Landmark_Interaction.SetActive(false);
+        Map_Controls.SetActive(true);
     }
 
     public void Btn_OpenLandmarkSlideshowMenu()
@@ -355,14 +357,6 @@ public class Gamemanager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.W))
         {
             Btn_OpenLandmarkMenu("WDR");
-        }
-        if (Input.GetKeyDown(KeyCode.C))
-        {
-            Btn_CloseLandmarkMenu();
-        }
-        if (Input.GetKeyDown(KeyCode.N))
-        {
-            CameraPreview.instance.NextWebcam();
         }
 
     }
