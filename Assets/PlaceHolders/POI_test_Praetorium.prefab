@@ -111,7 +111,7 @@ MonoBehaviour:
   dependencyStatus: 0
   authManager: {fileID: 0}
   myName: praetorium
-  uI_Name: praetorium
+  uI_Name: PRTM
   messageNumber: 0
   playerEnteredMaterial: {fileID: 2100000, guid: cf6e84d1f2f9a7d49a16273bdbd5491d,
     type: 2}

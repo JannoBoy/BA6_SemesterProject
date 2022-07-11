@@ -18,6 +18,8 @@ public class PointOfInterestManagerScript : MonoBehaviour
     public string uI_Name;
     public int messageNumber;
 
+    private bool iCalled;
+
     private MeshRenderer myMesh;
 
     [SerializeField]
@@ -106,6 +108,12 @@ public class PointOfInterestManagerScript : MonoBehaviour
             {
                 myMessages[i] = snapshot.Child(i.ToString()).Value.ToString();
             }
+
+            if (iCalled)
+            {
+                SpawnMessages();
+                iCalled = false;
+            }
         }
     }
 
@@ -135,11 +143,22 @@ public class PointOfInterestManagerScript : MonoBehaviour
             string messagePlace = (messageNumber).ToString();
 
             var DBTaskUpdate = dBReference.Child("pointOfInterest").Child(myName).Child("messages").Child(messagePlace).SetValueAsync(message);
+
+            
+
+            StartCoroutine(GetMessages());
+
+            iCalled = true;
         }
     }
 
     public void SpawnMessages()
     {
+        foreach (Transform child in textHolder.transform)
+        {
+            Destroy(child.gameObject);
+        }
+
         int i = 0;
 
         foreach(string newText in myMessages)
@@ -147,6 +166,7 @@ public class PointOfInterestManagerScript : MonoBehaviour
             GameObject newTextBox = Instantiate(textElement, textHolder.transform);
             newTextBox.GetComponent<TextLoaderScript>().NewTextElement(myMessages[i]);
             i++;
+            Debug.Log(i);
         }
     }
 
