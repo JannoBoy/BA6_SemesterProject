@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7deeef9fbd6948e469e873ef2a3cc56a, type: 3}
+  m_Name: PRTM
+  m_EditorClassIdentifier: 
+  landmarkName: Praetorium
+  text_dialogues:
+  - text: 
+    dialogueImage: {fileID: 21300000, guid: 80fc602cd2d3a52438f6cf3899ab7c68, type: 3}
+  - text: "So many old treasures! There must be more underground! Let\u2019s take
+      a look, maybe we will find out more! This is the Praetorium, which translates
+      to \u201CHeadquarters of a Roman Official\u201D in Roman history!"
+    dialogueImage: {fileID: 21300000, guid: 96d770c20e470d54db3d21c64db633be, type: 3}
+  - text: The Praetorium was the official residence of the Roman governor in ancient
+      Cologne. It is the city's most substantial structure and palace close to the
+      Rhein! Living in a palace must have been nice!
+    dialogueImage: {fileID: 21300000, guid: 46708c5e79798da458ae32aaf0cfdf75, type: 3}
+  - text: The remains (1-4th century a.d.) you see here originate from different
+      eras. It therefore took several longer periods to build the palace.
+    dialogueImage: {fileID: 21300000, guid: 53341d16041acda4ca29c6d2a5f69fa3, type: 3}
+  - text: The praetorium is part of a larger excavation place and does not only teach
+      about ancient Roman time but about the middle ages as well. You can also find
+      the jewishs city quarters here as well.
+    dialogueImage: {fileID: 21300000, guid: db19bd9996def5c4d82021674db4df67, type: 3}
+  - text: 'I bet you already heard about the Cloaca Maxima? It is a famous roman
+      sewer, situated 9.5m below our feet! Practical in ancient times but gives me
+      a funny feeling to visit a sewer from this close QUAK! You can also visit the
+      jewish ritual bath from before 1200 years and is connected to the ground water!
+      I would prefer to swim there, than in a sewer! '
+    dialogueImage: {fileID: 0}

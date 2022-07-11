@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7deeef9fbd6948e469e873ef2a3cc56a, type: 3}
+  m_Name: WDR
+  m_EditorClassIdentifier: 
+  landmarkName: WDR Funkhaus
+  text_dialogues:
+  - text: 
+    dialogueImage: {fileID: 21300000, guid: f36ee3bae8e3c814a988118bff7d9c77, type: 3}
+  - text: We are now situated on the popular Wallraf-Platz. It was built on the remains
+      of the Monopol Hotel that was destroyed in the war and opened up officially
+      on 21.06.1952. It was built in the style of the 50s.
+    dialogueImage: {fileID: 21300000, guid: b2c2ac88296857646b3606055c50cfe8, type: 3}
+  - text: "The WDR Funkhaus also has its own Orchestra, the WDR ensemble, and an
+      own caf\xE9: You can book tickets for different music performances here or
+      simply enjoy some food! Perfect to visit with family and friends"
+    dialogueImage: {fileID: 21300000, guid: 9a7099e4ed6e1b54c80bad1e77e007d4, type: 3}
+  - text: "The main hall counts as one of the most significant music halls of its
+      kind, celebrated as an \u201Carchitectural sensation\u201D, because of the
+      great arcustic and use of modern technology. The hall is often used for CD
+      and TV recordings. Fun fact: To achieve the right reverberation for recordings,
+      the seats fabric covers had to be produced out of a special material and the
+      seats\u2019 backrests had to have a special form! "
+    dialogueImage: {fileID: 0}
+  - text: The artist Ludwig Gies created the decorations in the main hall. The wooden
+      carvings on the pillars were inspired by Scandinavian woodworks from the middle
+      ages.
+    dialogueImage: {fileID: 21300000, guid: 3a924d197258db248a2fc123d04c419e, type: 3}
+  - text: 'The material inside the main hall is not simple wood! Finding the correct
+      wood resulted in a complete odyssey around Europe!  To save the pillars wood
+      carvings during modernization in 1987, the complete massive wood covers in
+      the room had to be removed. Finding a fitting wood was a challenge, as it had
+      to be swiss pear tree wood that had to be big enough and the right structure
+      to fit to the pillar carvings. Further, several cubic meters of beech wood
+      were also needed. Today, this is an untypical amount that is usually not sold
+      this way anymore. '
+    dialogueImage: {fileID: 0}
+  - text: There is more art here QUAK Located in the building's staircase is the
+      Meistermann Window, created 1952 by Georg Meistermann. This window with its
+      abstract shapes acts as a resonating body of the staircase.
+    dialogueImage: {fileID: 21300000, guid: e862d4cdd6c16ea4c90edd5f5363878e, type: 3}
+  - text: As we are in Cologne, I should also mention the Carnival Monday-Prom 1953.
+      It was held for the employees of the WDR Funkhaus to get together more closely
+      and celebrate together. Do you celebrate Carnival?
+    dialogueImage: {fileID: 21300000, guid: 6016f3ecf7490554fa1896c15225681e, type: 3}

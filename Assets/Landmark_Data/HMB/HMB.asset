@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7deeef9fbd6948e469e873ef2a3cc56a, type: 3}
+  m_Name: HMB
+  m_EditorClassIdentifier: 
+  landmarkName: "Heinzelm\xE4nnchen Brunnen"
+  text_dialogues:
+  - text: 
+    dialogueImage: {fileID: 21300000, guid: a85f9b94a82f50b4d94e3dfe564fac2b, type: 3}
+  - text: "A fountain! I would love to go for a swim here QUAK! The Heinzelm\xE4nnchenbrunnen
+      was built 1899 by sculptor Edmund Renard and his son, based on a poem by August
+      Kopisch (1799-1853) called \u201CDie Heinzelm\xE4nnchen zu K\xF6ln!\u201D"
+    dialogueImage: {fileID: 21300000, guid: f482cbb60831c2442a421caabbdd6e63, type: 3}
+  - text: "You probably already know about Gnomes and Goblins. Heinzelm\xE4nnchen
+      are similar looking, but way more diligent.   Let me tell you about the Heinzelm\xE4nnchen
+      Tale: At night, when everyone is asleep, the Heinzelm\xE4nnchen, helpful spirits
+      that live in peoples\u2019 homes, take over the work the humans could not fulfill. 
+      Would be quite cool to have someone help you with your chores QUAK "
+    dialogueImage: {fileID: 0}
+  - text: "Look closely at the stone reliefs! Looking from left to right, the fountain
+      reliefs visualize each verse of the Heinzelm\xE4nnchen Poem. Can you guess
+      the four different occupations that the Heinzelm\xE4nnchen help with?"
+    dialogueImage: {fileID: 21300000, guid: 45d34f892f7798448b78cac1ac606be2, type: 3}
+  - text: "When looking at the Heinzelm\xE4nnchen figures, as well as the four emblems
+      in between, we can find the occupations of Craftsman,Baker, Butcher and Tailor.
+      Did you guess it correctly? Nice! You have a great eye for details."
+    dialogueImage: {fileID: 21300000, guid: 624c14ffef130394eb79c579569bcf04, type: 3}
+  - text: "See the statue of that woman on top of the fountain? That is the tailor\u2019s
+      wife from the poem. She dispersed a range of peas, resulting in the Heinzelm\xE4nnchen
+      to slip and fall down the stairs. How mean!"
+    dialogueImage: {fileID: 21300000, guid: 6f76351d267be1948a28a74e8a2a839c, type: 3}
