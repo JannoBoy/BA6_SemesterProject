@@ -1813,6 +1813,12 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Btn_LandmarkSlideshow_Previous
       objectReference: {fileID: 0}
+    - target: {fileID: 2218426464913380849, guid: 8dc3bb25c6515e54881cd818eb465d77,
+        type: 3}
+      propertyPath: m_text
+      value: Now that you've seen this place, how about you take a picture here or
+        leave a message for others
+      objectReference: {fileID: 0}
     - target: {fileID: 2322788041065018514, guid: 8dc3bb25c6515e54881cd818eb465d77,
         type: 3}
       propertyPath: m_IsActive

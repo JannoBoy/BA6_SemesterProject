@@ -54,6 +54,7 @@ public class FirebaseAuthManager : MonoBehaviour
     private void Start()
     {
         DontDestroyOnLoad(gameObject);
+        passwordLogin.inputType = TMP_InputField.InputType.Password;
     }
 
     private void InitializeFirebase()
