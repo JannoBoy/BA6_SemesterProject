@@ -87,6 +87,7 @@ public class FirebaseAuthManager : MonoBehaviour
 
     public void LoginButton()
     {
+        SoundManager.instance.Play("Plobb");
         //Call the login coroutine passing the email and password
         StartCoroutine(Login(emailLogin.text, passwordLogin.text));
     }
@@ -144,7 +145,7 @@ public class FirebaseAuthManager : MonoBehaviour
             yield return new WaitForSeconds(2);
             confirmLogin.text = "";
             myUI.SetActive(false);
-            Gamemanager.instance.Btn_OpenLandmarkMenu("WDR");
+            Gamemanager.instance.Btn_OpenLandmarkMenu("PRTM");
         }
     }
 

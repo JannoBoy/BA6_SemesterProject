@@ -19,6 +19,7 @@ public class Gamemanager : MonoBehaviour
     public GameObject Camera_CaptureEffect;
     public GameObject Camera_Buttons;
     public GameObject Map_Controls;
+    public string UI_Sound_Plobb, UI_Sound_Sht;
 
     [Header("Landmark Main")]
     public GameObject Menu_Landmark_Main;
@@ -93,6 +94,7 @@ public class Gamemanager : MonoBehaviour
 
     public void Btn_TakeScreenshot()
     {
+        SoundManager.instance.Play(UI_Sound_Sht);
         StartCoroutine(CaptureProcess());
        
     }
@@ -125,6 +127,7 @@ public class Gamemanager : MonoBehaviour
 
     public void Btn_CloseCamera()
     {
+        SoundManager.instance.Play(UI_Sound_Sht);
         DisableSelfiePreview();
     }
 
@@ -168,6 +171,7 @@ public class Gamemanager : MonoBehaviour
         }
         else
         {
+            SoundManager.instance.Play(UI_Sound_Plobb);
             //set current landmark shared variables
             currentLandmark = myLandmark;
             currentLandmarkName = name_Landmark;
@@ -185,6 +189,7 @@ public class Gamemanager : MonoBehaviour
     //exit landmark and go back to map view
     public void Btn_CloseLandmarkMenu()
     {
+        SoundManager.instance.Play(UI_Sound_Sht);
         currentLandmarkName = "";
         currentLandmark = new Landmark { name = "", data = null };
         _slideshowIndex = 0;
@@ -196,6 +201,7 @@ public class Gamemanager : MonoBehaviour
 
     public void Btn_OpenLandmarkSlideshowMenu()
     {
+        SoundManager.instance.Play(UI_Sound_Plobb);
         UpdateLandmarkSlideshowInfo(currentLandmark.data);
         Menu_Landmark_Slideshow.SetActive(true);
         Menu_Landmark_Main.SetActive(false);
@@ -204,29 +210,34 @@ public class Gamemanager : MonoBehaviour
     //open interaction menu
     public void Btn_OpenLandmarkInteractionMenu()
     {
+        SoundManager.instance.Play(UI_Sound_Plobb);
         Menu_Landmark_Interaction.SetActive(true);
         Menu_Landmark_Slideshow.SetActive(false);
     }
     //go to next dialogue/image entry for the landmark
     public void Btn_LandmarkSlideshow_Next()
     {
+        SoundManager.instance.Play(UI_Sound_Sht);
         _slideshowIndex++;
         UpdateLandmarkSlideshowInfo(currentLandmark.data);
     }
     //go to previous dialogue/image entry for the landmark
     public void Btn_LandmarkSlideshow_Previous()
     {
+        SoundManager.instance.Play(UI_Sound_Sht);
         _slideshowIndex--;
         UpdateLandmarkSlideshowInfo(currentLandmark.data);
     }
 
     public void Btn_NextCamera()
     {
+        SoundManager.instance.Play(UI_Sound_Sht);
         CameraPreview.instance.NextWebcam();
     }
 
     public void Btn_Messages()
     {
+        SoundManager.instance.Play(UI_Sound_Plobb);
         landmark_Manager.SpawnMessages();
     }
 
