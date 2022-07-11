@@ -470,7 +470,7 @@ MonoBehaviour:
   - name: PRTM
     data: {fileID: 11400000, guid: 4a1e2a03e3fe8a745b936d8e2c0cc00c, type: 2}
   - name: WDR
-    data: {fileID: 11400000, guid: fed1565085f91cc408fc392ec3740ead, type: 2}
+    data: {fileID: 0}
   - name: HMB
     data: {fileID: 11400000, guid: 178a14e74181bf34d9c1ec54a65db1ae, type: 2}
   landmark_Manager: {fileID: 0}
@@ -885,6 +885,50 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1606291590}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1518269745
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1518269747}
+  - component: {fileID: 1518269746}
+  m_Layer: 0
+  m_Name: SoundManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1518269746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1518269745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28d7c59caf8bb384a8e09a971c11031d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds: []
+--- !u!4 &1518269747
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1518269745}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 271.45016, y: 323.48206, z: -85.6875}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1525933346 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2322788041065018514, guid: 8dc3bb25c6515e54881cd818eb465d77,
