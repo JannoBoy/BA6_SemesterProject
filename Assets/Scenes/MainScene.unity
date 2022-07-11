@@ -477,7 +477,7 @@ MonoBehaviour:
   - name: PRTM
     data: {fileID: 11400000, guid: 4a1e2a03e3fe8a745b936d8e2c0cc00c, type: 2}
   - name: WDR
-    data: {fileID: 0}
+    data: {fileID: 11400000, guid: 7cb5dcda7584209498981735930bc69b, type: 2}
   - name: HMB
     data: {fileID: 11400000, guid: 178a14e74181bf34d9c1ec54a65db1ae, type: 2}
   landmark_Manager: {fileID: 0}
