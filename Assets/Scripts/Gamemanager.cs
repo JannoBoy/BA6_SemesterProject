@@ -88,13 +88,14 @@ public class Gamemanager : MonoBehaviour
 
     public void Btn_StartCamera()
     {
+        SoundManager.instance.Play(UI_Sound_Plobb);
         StartCoroutine(InitWebcam());
     }
     
 
     public void Btn_TakeScreenshot()
     {
-        SoundManager.instance.Play(UI_Sound_Sht);
+        SoundManager.instance.Play(UI_Sound_Plobb);
         StartCoroutine(CaptureProcess());
        
     }
@@ -231,7 +232,7 @@ public class Gamemanager : MonoBehaviour
 
     public void Btn_NextCamera()
     {
-        SoundManager.instance.Play(UI_Sound_Sht);
+        SoundManager.instance.Play(UI_Sound_Plobb);
         CameraPreview.instance.NextWebcam();
     }
 

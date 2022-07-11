@@ -211,18 +211,21 @@ public class TouchControls : MonoBehaviour
 
 	public void ZoomOut()
     {
+		SoundManager.instance.Play("Sht");
 		_followTarget = false;
 		transform.localPosition -= (transform.forward * _zoomSpeed);
 	}
 
 	public void ZoomIn()
     {
+		SoundManager.instance.Play("Sht");
 		_followTarget = false;
 		transform.localPosition += (transform.forward * _zoomSpeed);
 	}
 
 	public void Follow()
     {
+		SoundManager.instance.Play("Plobb");
 		_followTarget = true;
     }
 	public void ResetPosition()

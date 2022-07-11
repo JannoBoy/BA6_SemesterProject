@@ -198,6 +198,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5132935436458149047, guid: fba49e603f152e949bd41ca00d7ef891,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fba49e603f152e949bd41ca00d7ef891, type: 3}
 --- !u!20 &1410983 stripped
@@ -450,6 +455,8 @@ MonoBehaviour:
   Camera_CaptureEffect: {fileID: 1380559907}
   Camera_Buttons: {fileID: 1380559906}
   Map_Controls: {fileID: 1318558753}
+  UI_Sound_Plobb: Plobb
+  UI_Sound_Sht: Sht
   Menu_Landmark_Main: {fileID: 1606291603}
   text_LandmarkTitle: {fileID: 1606291602}
   image_LandmarkImage: {fileID: 1606291601}
@@ -914,7 +921,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28d7c59caf8bb384a8e09a971c11031d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sounds: []
+  sounds:
+  - audioName: Plobb
+    clip: {fileID: 8300000, guid: 5383099b1df74364fb70e38f4a939fdb, type: 3}
+    volume: 0.2
+    pitch: 1
+    playOnAwake: 0
+    loop: 0
+    source: {fileID: 0}
+  - audioName: Sht
+    clip: {fileID: 8300000, guid: 3f1cffe079f446449b2361c9f526ebb0, type: 3}
+    volume: 0.2
+    pitch: 1
+    playOnAwake: 0
+    loop: 0
+    source: {fileID: 0}
 --- !u!4 &1518269747
 Transform:
   m_ObjectHideFlags: 0
