@@ -467,10 +467,12 @@ MonoBehaviour:
   Menu_Landmark_Interaction: {fileID: 1606291592}
   image_Frogo: {fileID: 1606291591}
   Landmarks:
-  - name: Dom
-    data: {fileID: 11400000, guid: 081fe36e7f1d64546802d2536e07f002, type: 2}
+  - name: PRTM
+    data: {fileID: 11400000, guid: 4a1e2a03e3fe8a745b936d8e2c0cc00c, type: 2}
   - name: WDR
     data: {fileID: 11400000, guid: fed1565085f91cc408fc392ec3740ead, type: 2}
+  - name: HMB
+    data: {fileID: 11400000, guid: 178a14e74181bf34d9c1ec54a65db1ae, type: 2}
   landmark_Manager: {fileID: 0}
   textHolder: {fileID: 1606291604}
   txt_preview: {fileID: 34463421}
