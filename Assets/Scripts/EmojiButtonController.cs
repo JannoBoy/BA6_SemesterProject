@@ -7,7 +7,13 @@ public class EmojiButtonController : MonoBehaviour
 
     public void EmojiButton(string myEmoji)
     {
+        if(previeTxt.text.Length < 70)
         previeTxt.text = previeTxt.text + myEmoji;
     }
-        
+
+    public void EmojiButtonClear()
+    {
+        previeTxt.text = "";
+    }
+
 }
